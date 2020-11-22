@@ -133,6 +133,7 @@ const StripeCheckoutWebView = (props: Props) => {
       originWhitelist={['*']}
       {...webViewProps}
       source={{
+        baseUrl: 'https://stripe.com',
         html: stripeCheckoutRedirectHTML(
           stripePublicKey,
           checkoutSessionInput,
